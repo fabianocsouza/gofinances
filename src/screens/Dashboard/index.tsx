@@ -24,6 +24,7 @@ import {
 }
  
  export function Dashboard() {
+
   const data: DataListProps[] = [
     {
       id: '1',
@@ -103,7 +104,7 @@ import {
 
        <TransactionList
         data={data}
-        keyExtractor={item => item.}
+        keyExtractor={item => item.id}
         renderItem={({ item }) => <TransactionCard data={item}/>}
         />   
       </Transactions>
